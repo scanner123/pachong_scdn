@@ -15,7 +15,7 @@ import static mypackage.csdn.Tool.parse;
 public class SchedulingTest {
     private int i = 0;
 
-    @Scheduled(fixedRate = 60 * 1000)//具体时间间隔，60*1000也就是1分钟执行一次
+    @Scheduled(fixedRate = 600 * 1000)//具体时间间隔，60*1000也就是1分钟执行一次
     void doSomethingWith() {
         String url = "https://blog.csdn.net/weixin_42063820";
         String body= Tool.doGet(url);
